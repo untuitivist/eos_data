@@ -5,12 +5,20 @@
 
 ## 目录
 
-- [背景](#背景)
-- [安装](#安装)
-- [使用方法](#使用方法)
-- [示例](#示例)
-- [测试](#测试)
-- [许可证](#许可证)
+- [EoS\_data](#eos_data)
+  - [目录](#目录)
+  - [背景](#背景)
+  - [安装](#安装)
+  - [使用方法](#使用方法)
+    - [类初始化](#类初始化)
+    - [计算压缩因子](#计算压缩因子)
+    - [绘制压缩因子图](#绘制压缩因子图)
+  - [示例](#示例)
+  - [测试](#测试)
+    - [运行测试](#运行测试)
+    - [示例结果](#示例结果)
+    - [示例图片](#示例图片)
+  - [许可证](#许可证)
 
 ## 背景
 
@@ -21,15 +29,24 @@
 1. 克隆或下载本项目的代码：
 
 ```bash
-   git clone https://github.com/your-repo/eos_data.git
+   git clone https://github.com/untuitivist/eos_data.git
    cd eos_data
 ```
 
 2. 安装所需的 Python 包：
+   + 通过 `pip`, `conda` 安装：
+   ```
+   numpy==1.26.4
+   pandas==2.2.2
+   plotly==5.19.0
+   scipy==1.11.4
+   ```
 
-```bash
-   pip install numpy pandas plotly
-```
+   + 通过`requirements.txt`安装：
+
+   ```bash
+      pip install -r requirements.txt
+   ```
 
 ## 使用方法
 
@@ -98,9 +115,7 @@ fig.show()
 
 ### 运行测试
 
-```
-bash
-复制代码
+```bash
 python test.py
 ```
 
