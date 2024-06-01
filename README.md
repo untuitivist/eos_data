@@ -53,7 +53,7 @@
 ### 类初始化
 
 ```python
-from eos_data import EoS_data
+from EoS.EoS import EoS_data
 
 # 初始化 EoS_data 类
 y_dict = {'CO_2': 0.8, 'H_2': 0.2}
@@ -91,10 +91,10 @@ import warnings
 warnings.filterwarnings('ignore', category=RuntimeWarning)
 
 # 导入EoS_data类
-from eos_data import EoS_data
+from EoS.EoS import EoS_data
 
 # 初始化EoS_data类
-y_dict = {'Methane': 0.8, 'Ethane': 0.2}
+y_dict = {'CO_2': 0.8, 'N_2': 0.2}
 T_list = [300, 320, 340]
 P_list = [1e5, 2e5, 3e5]
 
