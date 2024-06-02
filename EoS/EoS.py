@@ -3,10 +3,12 @@ import pandas as pd
 from plotly import graph_objects as go
 import warnings
 warnings.filterwarnings('ignore', category=RuntimeWarning)
+import os
+print(os.getcwd())
 
-from .PR import *
-from .RK import *
-from .SRK import *
+from .eq.PR_eq import PR
+from .eq.RK_eq import RK
+from .eq.SRK_eq import SRK
 
 Gas_data =  pd.read_json(r'./EoS/Gas_data.json')
 Gas_data.index = pd.Index(list(Gas_data['data']))
